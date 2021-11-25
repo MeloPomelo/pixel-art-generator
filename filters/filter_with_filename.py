@@ -1,8 +1,8 @@
 import numpy as np
 from PIL import Image
 
-def generate_pixel_art_optimized(input_file, mosaic_size, grayscale):
-    img = Image.open(input_file)
+def generate_pixel_art(mosaic_size = 10, grayscale = 50):
+    img = Image.open("img/origin.jpg")
     arr = np.array(img)
     height = len(arr)
     width = len(arr[1])
@@ -13,6 +13,5 @@ def generate_pixel_art_optimized(input_file, mosaic_size, grayscale):
             pixel = pixel // (100 * grayscale) * grayscale
             arr[i: i + mosaic_size, j: j + mosaic_size] = pixel
 
-    return Image.fromarray(arr)
-
-
+    res = Image.fromarray(arr)
+    res.save("img/res2.jpg")
