@@ -1,7 +1,8 @@
-#Pixel Art Generator
+Pixel Art Generator
+==
 ![Screenshot](img/origin.jpg)
-######Исходное изображение
-##Профилирование:
+Профилирование:
+--
 
 * old_filter.py    
 ![Screenshot](img/res1.jpg)
