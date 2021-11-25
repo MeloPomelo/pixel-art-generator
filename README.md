@@ -1,6 +1,7 @@
 Pixel Art Generator
 ==
 ![Screenshot](img/origin.jpg)
+![Screenshot](img/result.jpg)
 Профилирование:
 --
 

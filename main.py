@@ -1,6 +1,5 @@
 from filters import filter, old_filter, filter_with_filename
 
-
 def use_filter():
     input_file = input("Input file: ")
     output_file = input("Output file: ")

@@ -1,3 +1,4 @@
+import PIL.Image
 import numpy as np
 from PIL import Image
 
@@ -14,5 +15,3 @@ def generate_pixel_art(input_file, mosaic_size, grayscale):
             arr[i: i + mosaic_size, j: j + mosaic_size] = pixel
 
     return Image.fromarray(arr)
-
-
